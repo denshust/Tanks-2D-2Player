@@ -4,6 +4,7 @@ public class TankShot : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform gunShotPoint;
     public float bulletSpeed = 20f;
+    public KeyCode ShotBullet;
     public void SpawnBullet()
     {
 
@@ -14,7 +15,8 @@ public class TankShot : MonoBehaviour
     //Instantiate = Spawn, Input = perevirka na knopku
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftControl))
+
+        if (Input.GetKeyDown(ShotBullet))
         {         
                 SpawnBullet();
         }

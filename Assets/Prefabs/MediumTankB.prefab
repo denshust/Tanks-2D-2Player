@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 2560167243876236818}
   - component: {fileID: 7955955159424433458}
   - component: {fileID: 6922966519366824904}
+  - component: {fileID: 9191474767844886121}
   m_Layer: 0
   m_Name: MediumTankB
   m_TagString: Untagged
@@ -511,6 +512,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2718049118911761015, guid: b4bf7ccfc88a0e149aecf2a0408fbdcb, type: 3}
   gunShotPoint: {fileID: 4488218393435550117}
   bulletSpeed: 20
+  ShotBullet: 0
+--- !u!114 &9191474767844886121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853032407332788546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76259da90dc84e45b06fc5c7e0deec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7008091016009183908
 GameObject:
   m_ObjectHideFlags: 0
