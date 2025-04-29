@@ -7,7 +7,6 @@ public class TankShot : MonoBehaviour
     public KeyCode ShotBullet;
     public void SpawnBullet()
     {
-
         GameObject patron = Instantiate(bulletPrefab, gunShotPoint.position, gunShotPoint.rotation);
         Rigidbody2D fizikaPuli = patron.GetComponent<Rigidbody2D>();
         fizikaPuli.AddForce(gunShotPoint.up * bulletSpeed, ForceMode2D.Impulse);
