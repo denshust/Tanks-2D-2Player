@@ -10,7 +10,11 @@ public class Bullet : MonoBehaviour
      if(collision.collider.gameObject.TryGetComponent<HealthSystem>(out HealthSystem healhtobjekt))
         {
            healhtobjekt.TakeDamage(damage);
-        }   
-         Destroy(gameObject);
+        }
+        if (collision.collider.gameObject.TryGetComponent<PereshkodaHealth>(out  PereshkodaHealth pereshkoda))
+        {
+            pereshkoda.TakeDamage(damage);
+        }
+        Destroy(gameObject);
    }
 }
