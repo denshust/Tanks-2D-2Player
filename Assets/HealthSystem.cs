@@ -25,7 +25,14 @@ public class HealthSystem : MonoBehaviour
     }
     private void Death()
     {
-       Destroy(gameObject); 
+        Invoke("Respawn", 2);
+        gameObject.SetActive(false);
+    }
+    private void Respawn()
+    {
+        gameObject.SetActive(true);
+        health = healthMax;
+        transform.position += new Vector3(Random.Range(-2f, 2f),Random.Range(-2f, 2f));
     }
 
 }

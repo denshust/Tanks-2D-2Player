@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class SpikeDamage : MonoBehaviour
 {
+    public float damage = 20f;
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent<HealthSystem>(out HealthSystem healhtobjekt))
         {
-            healhtobjekt.TakeDamage(0.1f);
+            healhtobjekt.TakeDamage(damage);
         }
         
     }
