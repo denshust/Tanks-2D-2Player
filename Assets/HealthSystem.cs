@@ -8,7 +8,7 @@ public class HealthSystem : MonoBehaviour
     public float health = 100;
     public float healthMax = 100;
     public Image HPBar;
-    private void ChangeHealthUi()
+    public void ChangeHealthUi()
     {
         float xscale = health / healthMax;
         HPBar.transform.localScale  = new Vector3 (xscale, 1, 1);
