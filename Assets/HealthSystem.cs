@@ -32,6 +32,7 @@ public class HealthSystem : MonoBehaviour
     {
         gameObject.SetActive(true);
         health = healthMax;
+        ChangeHealthUi();              
         transform.position += new Vector3(Random.Range(-2f, 2f),Random.Range(-2f, 2f));
     }
 

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6067689837013398962}
   - component: {fileID: 7859289744877069186}
   - component: {fileID: 332215631377228447}
-  - component: {fileID: 4423069482659671403}
+  - component: {fileID: -940711229592449708}
   m_Layer: 0
-  m_Name: DamageBuff
+  m_Name: BuletSpeedBuf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.17128563, a: 1}
+  m_Color: {r: 0.8113208, g: 0.026023442, b: 0.7327301, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &4423069482659671403
+--- !u!114 &-940711229592449708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,8 +130,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1452657781751011055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c842f64c429ef944f911c8c465b2b8b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dd6a38682e28694a851eeaca6cadfd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 6
-  damageMultiplier: 2
+  duration: 12
+  bulletBufSpeed: 3
