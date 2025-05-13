@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d095de063c482c4a8b4d113bb0c38a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb1901a4dd1676441a505df73e03038a, type: 3}
   m_Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -272,7 +272,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d095de063c482c4a8b4d113bb0c38a0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb1901a4dd1676441a505df73e03038a, type: 3}
   m_Color: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -356,7 +356,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3174d3bca3b62c24896dabb9812253bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0609a9292fd58642a68a660e8bab050, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -381,9 +381,8 @@ GameObject:
   - component: {fileID: 7955955159424433458}
   - component: {fileID: 6922966519366824904}
   - component: {fileID: 9191474767844886121}
-  - component: {fileID: 704269947932273964}
   m_Layer: 0
-  m_Name: MediumTankB
+  m_Name: SpeedTank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4853032407332788546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: 0}
+  m_LocalPosition: {x: -2, y: 0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -421,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98596bb480083c04f9115a85e3a4f460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   MovementUp: 0
   MovementDown: 0
   MovementRight: 0
@@ -512,9 +511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2718049118911761015, guid: b4bf7ccfc88a0e149aecf2a0408fbdcb, type: 3}
   gunShotPoint: {fileID: 4488218393435550117}
-  bulletSpeed: 20
-  bulletDamage: 10
-  ShotBullet: 0
+  bulletSpeed: 40
+  bulletDamage: 8
+  ShotBullet: 32
 --- !u!114 &9191474767844886121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,31 +526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76259da90dc84e45b06fc5c7e0deec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  healthMax: 100
+  health: 89
+  healthMax: 89
   HPBar: {fileID: 0}
---- !u!114 &704269947932273964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4853032407332788546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 899e4d81f6e63864a9bc896c2c5e48b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankMovement: {fileID: 5238316660471281086}
-  tankShot: {fileID: 6922966519366824904}
-  healthSystem: {fileID: 9191474767844886121}
-  gunConektor: {fileID: 7147203833084279253}
-  gun: {fileID: 8969300536526500198}
-  hull: {fileID: 4753343179064050949}
-  track1: {fileID: 2853785631451445272}
-  tower: {fileID: 5680482071167971614}
-  track2: {fileID: 585698963624724895}
-  tankData: {fileID: 0}
 --- !u!1 &7008091016009183908
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +602,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ef52641bac94e0642b7d213ffbd429e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c55d1b41192f50409d83ab5e5953d29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -712,7 +689,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: f523419b37f619c43b0e32f6e2e524af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 175673e2c2e70c74a901e9ad4cab8a44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -796,7 +773,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 318781217d5bb2845b7a6d4f62a7a6c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52786b274c91b9343b42f43961fa9e13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

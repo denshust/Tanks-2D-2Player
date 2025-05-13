@@ -405,7 +405,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &424954307
 MonoBehaviour:
@@ -660,6 +660,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 704269947932273964, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
+      propertyPath: tankData
+      value: 
+      objectReference: {fileID: 11400000, guid: abfca9cda3f17f44f97352c922b9fcc7, type: 2}
     - target: {fileID: 809500264181808119, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -707,6 +711,10 @@ PrefabInstance:
     - target: {fileID: 4853032407332788546, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
       propertyPath: m_Name
       value: MediumTankB2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853032407332788546, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5238316660471281086, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
       propertyPath: MovementUp
@@ -977,9 +985,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 704269947932273964, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
+      propertyPath: tankData
+      value: 
+      objectReference: {fileID: 11400000, guid: 46813aafe3fb0104092e4d7cb1964b75, type: 2}
     - target: {fileID: 809500264181808119, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 809500264181808119, guid: 15d2a3fd333293c41a714a0122bd0e9d, type: 3}
       propertyPath: m_LocalPosition.x
