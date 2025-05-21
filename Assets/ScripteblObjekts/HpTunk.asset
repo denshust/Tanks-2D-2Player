@@ -21,3 +21,4 @@ MonoBehaviour:
   hull: {fileID: 21300000, guid: 7d0f7900faab5fd4fa058828fd546492, type: 3}
   track: {fileID: 21300000, guid: 6e3675dd33e7b404b86496d5a7c4f3f9, type: 3}
   tower: {fileID: 21300000, guid: 78696e24cbcb7d0468b6482fb15339e5, type: 3}
+  moveAnimation: {fileID: 7400000, guid: 933da15e62fe28b4eb11f2860d2e9ab4, type: 2}

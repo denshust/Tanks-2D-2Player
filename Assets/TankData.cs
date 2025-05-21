@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,5 +10,6 @@ public class TankData : ScriptableObject
     public float bulletSpeed = 20;
     public float health = 100;
     public Sprite gunConektor, gun, hull, track, tower;
-   
+    public AnimationClip moveAnimation; 
+
 }

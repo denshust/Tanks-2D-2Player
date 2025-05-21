@@ -6,12 +6,14 @@ public class TankShot : MonoBehaviour
     public float bulletSpeed = 20f;
     public float bulletDamage = 10f; ///////////
     public KeyCode ShotBullet;
+    public Animator tankAnimator;
     public void SpawnBullet()
     {
         GameObject patron = Instantiate(bulletPrefab, gunShotPoint.position, gunShotPoint.rotation);
         Rigidbody2D fizikaPuli = patron.GetComponent<Rigidbody2D>();
         patron.GetComponent<Bullet>().damage = bulletDamage; ///////////
         fizikaPuli.AddForce(gunShotPoint.up * bulletSpeed, ForceMode2D.Impulse);
+        tankAnimator.SetTrigger("Shot");
     }
     //Instantiate = Spawn, Input = perevirka na knopku
     public void Update()
@@ -22,4 +24,5 @@ public class TankShot : MonoBehaviour
                 SpawnBullet();
         }
     }
+
 }

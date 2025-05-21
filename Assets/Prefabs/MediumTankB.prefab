@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 7602623345211181183}
   - component: {fileID: 585698963624724895}
   m_Layer: 0
-  m_Name: Track
+  m_Name: Track2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,6 +382,7 @@ GameObject:
   - component: {fileID: 6922966519366824904}
   - component: {fileID: 9191474767844886121}
   - component: {fileID: 704269947932273964}
+  - component: {fileID: 5714376314617531612}
   m_Layer: 0
   m_Name: MediumTankB
   m_TagString: Untagged
@@ -515,6 +516,7 @@ MonoBehaviour:
   bulletSpeed: 20
   bulletDamage: 10
   ShotBullet: 0
+  tankAnimator: {fileID: 5714376314617531612}
 --- !u!114 &9191474767844886121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899e4d81f6e63864a9bc896c2c5e48b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 5714376314617531612}
   tankMovement: {fileID: 5238316660471281086}
   tankShot: {fileID: 6922966519366824904}
   healthSystem: {fileID: 9191474767844886121}
@@ -552,6 +555,27 @@ MonoBehaviour:
   tower: {fileID: 5680482071167971614}
   track2: {fileID: 585698963624724895}
   tankData: {fileID: 0}
+--- !u!95 &5714376314617531612
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853032407332788546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08fc06cd458400840bb0f65d0965a7bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7008091016009183908
 GameObject:
   m_ObjectHideFlags: 0

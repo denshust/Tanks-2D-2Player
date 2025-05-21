@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TankVartant : MonoBehaviour
 {
+    public Animator animator;
     public TankMovement tankMovement;
     public TankShot tankShot;
     public HealthSystem healthSystem;
@@ -22,6 +23,9 @@ public class TankVartant : MonoBehaviour
         track1.sprite = tankData.track;
         track2.sprite = tankData.track;
         tower.sprite = tankData.tower;
+        var overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        overrideController["MoveAnimation1"] = tankData.moveAnimation;
+        animator.runtimeAnimatorController = overrideController;
     }
 
 

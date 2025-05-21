@@ -8,8 +8,10 @@ public class TankMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement; // Зберігає напрямок руху
     public KeyCode MovementUp, MovementDown, MovementRight, MovementLeft;
+    private Animator animator;
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -37,6 +39,7 @@ public class TankMovement : MonoBehaviour
 
         // Нормалізація, щоб швидкість була стабільна під кутом (по діагоналі)
         movement = movement.normalized;
+        animator.SetFloat("Speed", movement.magnitude);
     }
 
     void FixedUpdate()
