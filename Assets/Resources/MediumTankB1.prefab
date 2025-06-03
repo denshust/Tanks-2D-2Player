@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 1277752439084336868}
   - component: {fileID: 840486898475234349}
   - component: {fileID: 4916904023357021613}
+  - component: {fileID: 7116383305400285861}
   m_Layer: 0
   m_Name: MediumTankB1
   m_TagString: Untagged
@@ -445,6 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98596bb480083c04f9115a85e3a4f460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: 5304687512684633793}
   moveSpeed: 5
   MovementUp: 119
   MovementDown: 115
@@ -534,12 +536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd4dfd939098c54e837bc14465da209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: 5304687512684633793}
   bulletPrefab: {fileID: 2718049118911761015, guid: b4bf7ccfc88a0e149aecf2a0408fbdcb, type: 3}
   gunShotPoint: {fileID: 7170952495590079222}
   bulletSpeed: 20
   bulletDamage: 10
   ShotBullet: 32
-  tankAnimator: {fileID: 0}
+  tankAnimator: {fileID: 4916904023357021613}
 --- !u!114 &7832409488293389442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899e4d81f6e63864a9bc896c2c5e48b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 4916904023357021613}
   tankMovement: {fileID: 5586098622740602289}
   tankShot: {fileID: 8668671349013047701}
   healthSystem: {fileID: 7832409488293389442}
@@ -611,6 +614,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 1277752439084336868}
   - {fileID: 840486898475234349}
+  - {fileID: 7116383305400285861}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -667,6 +671,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7116383305400285861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313052658876547843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 2
+    Name: Shot
+  - Type: 1
+    SynchronizeType: 2
+    Name: Speed
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &6740219141341226189
 GameObject:
   m_ObjectHideFlags: 0
