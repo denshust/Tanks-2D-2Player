@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PereshkodaHealth : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PereshkodaHealth : MonoBehaviour
     }
     private void Death()
     {
-        Destroy(gameObject);
+       PhotonNetwork.Destroy(gameObject);
     }
 
 }

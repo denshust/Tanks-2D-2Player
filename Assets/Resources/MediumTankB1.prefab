@@ -608,10 +608,11 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 1
+  Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 7832409488293389442}
   - {fileID: 1277752439084336868}
   - {fileID: 840486898475234349}
   - {fileID: 7116383305400285861}
