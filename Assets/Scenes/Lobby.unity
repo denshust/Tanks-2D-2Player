@@ -1064,8 +1064,8 @@ MonoBehaviour:
   tankImage: {fileID: 279820240}
   sprites:
   - {fileID: 21300000, guid: 7c24c442f62a17e4d9ef09f0226a126d, type: 3}
-  - {fileID: 21300000, guid: 01826595ec868e04ba8b1c402bddd4ea, type: 3}
   - {fileID: 21300000, guid: 6767e2d3b8807c14d9e03a0649edbd8d, type: 3}
+  - {fileID: 21300000, guid: 01826595ec868e04ba8b1c402bddd4ea, type: 3}
 --- !u!1 &601008284
 GameObject:
   m_ObjectHideFlags: 0

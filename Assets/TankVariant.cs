@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankVartant : MonoBehaviour
+public class TankVariant : MonoBehaviour
 {
     public Animator animator;
     public TankMovement tankMovement;
@@ -10,8 +10,11 @@ public class TankVartant : MonoBehaviour
     public HealthSystem healthSystem;
     public SpriteRenderer gunConektor, gun, hull, track1, tower, track2;
     public TankData tankData;
+    public TankData[] allTanks;
     private void Start()
     {
+        int index = PlayerPrefs.GetInt("tankIndex", 0);
+        tankData = allTanks[index];
         tankMovement.moveSpeed = tankData.moveSpeed;
         tankShot.bulletDamage = tankData.bulletDamage;
         tankShot.bulletSpeed = tankData.bulletSpeed;

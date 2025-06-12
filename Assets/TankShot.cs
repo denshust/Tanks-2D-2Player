@@ -9,6 +9,8 @@ public class TankShot : MonoBehaviour
     public float bulletDamage = 10f; ///////////
     public KeyCode ShotBullet;
     public Animator tankAnimator;
+    public AudioClip shotSound;
+    public AudioSource shotAudioSource;
     public void SpawnBullet()
     {
         GameObject patron = PhotonNetwork. Instantiate(bulletPrefab.name, gunShotPoint.position, gunShotPoint.rotation);
@@ -16,6 +18,7 @@ public class TankShot : MonoBehaviour
         patron.GetComponent<Bullet>().damage = bulletDamage; ///////////
         fizikaPuli.AddForce(gunShotPoint.up * bulletSpeed, ForceMode2D.Impulse);
         tankAnimator.SetTrigger("Shot");
+        shotAudioSource.PlayOneShot(shotSound);
     }
     //Instantiate = Spawn, Input = perevirka na knopku
     public void Update()
@@ -25,5 +28,6 @@ public class TankShot : MonoBehaviour
                 SpawnBullet();
         }
     }
+    
 
 }

@@ -10,6 +10,7 @@ public class TanksSelecktor : MonoBehaviour
     private int tankIndex;
     private void Start()
     {
+        tankIndex = PlayerPrefs.GetInt("tankIndex", 0);
         tankImage.sprite = sprites[tankIndex];
     }
     public void ChangeTank(int direction)
@@ -21,6 +22,7 @@ public class TanksSelecktor : MonoBehaviour
         }
         tankIndex %= sprites.Length;
         tankImage.sprite = sprites[tankIndex];
+        PlayerPrefs.SetInt("tankIndex", tankIndex);
     }
 
 
